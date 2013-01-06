@@ -1,0 +1,50 @@
+body
+  font-family: 'Helvetica Neue', Arial, 'メイリオ', Meiryo ,'ヒラギノ角ゴPro W3' ,'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif
+  color: $text-color
+  line-height: 1.6em
+  background: $base-color url(bg.png)
+  +ts-fff
+
+::selection
+  background: $main-color
+  color: $white
+  +ts-fff(0)
+::-moz-selection
+  background: $main-color
+  color: $white
+  +ts-fff(0)
+
+a
+  color: $link-color
+  text-decoration: none
+  &:hover
+    color: $hover-color
+
+b, strong
+  font-weight: bold
+
+.content
+  width: $width
+  margin: 0 auto
+  padding: 50px 0
+
+.section
+  margin: 100px 0
+
+.title
+  font-size: 200% 
+  margin:
+    bottom: 100px
+
+.zurui-line-square
+  margin: 100px
+  width: 200px
+  height: 200px
+  +line-top-bottom-left-right
+
+.zurui-line-bottom
+  margin: 100px
+  width: 400px
+  height: 200px
+  +line-bottom
+  
