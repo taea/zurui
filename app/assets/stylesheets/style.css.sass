@@ -32,9 +32,13 @@ b, strong
   margin: 100px 0
 
 .title
-  font-size: 200% 
+  font-size: 160% 
   margin:
     bottom: 100px
+
+  &.dame
+    margin:
+      bottom: 20px
 
 .zurui-line-square
   margin: 100px
@@ -47,4 +51,14 @@ b, strong
   width: 400px
   height: 200px
   +line-bottom
-  
+
+.dame-kadomaru
+  +border-radius(60px)
+  background: #FFF
+  +box-shadow(rgba(0,0,0,.1) 0 0 3px)
+  width: 800px
+  height: 300px
+  padding: 30px
+  font-size: 14px
+  &.ok
+    +border-radius(6px)
